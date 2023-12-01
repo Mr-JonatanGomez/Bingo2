@@ -7,7 +7,6 @@ import java.util.Scanner;
 // IMPRIMIR BOLAS DEL BINGO por orden de aparición (movido)
 // PARTE FINAL (movido)
 
-
 //METER VARIABLES IMPORTANTES A PUBLIC CLASS antes del main
 //LLAMAR A LOS METODOS POR ORDEN
 public class Bin2method {
