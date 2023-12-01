@@ -7,8 +7,9 @@ import java.util.Scanner;
 // IMPRIMIR BOLAS DEL BINGO por orden de aparición (movido)
 // PARTE FINAL (movido)
 
-//METER VARIABLES IMPORTANTES A PUBLIC CLASS antes del main
+//METER VARIABLES IMPORTANTES A PUBLIC CLASS antes del main para poder llamarlas
 //LLAMAR A LOS METODOS POR ORDEN
+//METER private static a las variables, si no, no funcionan (hecho)
 public class Bin2method {
     private static int[] carton = new int[10];
     private static int[] numerosBingo = new int[99];
@@ -16,24 +17,18 @@ public class Bin2method {
     private static  int contadorBolasBingo = 0;
     private static int contadorBolasLineaFinal = 0;
     private static int contadorBolasBingoFinal = 0;
-
     private static int aciertosLinea = 0;
     private static int aciertosBingo = 0;
-
     private static boolean bingoCantado = false;
     private static boolean lineaCantada = false;
     private static int pronostico;
     private static int apuesta;
     public static void main(String[] args) {
 
-
         Scanner reJugar = new Scanner(System.in);
         System.out.println("\nBIENVENIDOS AL BINGO \n \n");
         do {
-
-
-
-        //llamar metodos aqui
+            //llamar metodos aqui
 
         bidAndPrediction();generarCarton();imprimirCarton();
         generarBolasImprimirlasVerificaLinea();ImprimirBolasporOrden();parteFinal();
