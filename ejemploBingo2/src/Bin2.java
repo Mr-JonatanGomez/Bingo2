@@ -4,7 +4,7 @@ public class Bin2 {
 
     public static void main(String[] args) {
 // INICIO y variables fijas importantes
-        //// git:  https://github.com/Mr-JonatanGomez/Bingo-definitivo
+        //// git:  https://github.com/Mr-JonatanGomez/Bingo2
 
         Scanner reJugar = new Scanner(System.in);
         System.out.println("\nBIENVENIDOS AL BINGO \n \n");
