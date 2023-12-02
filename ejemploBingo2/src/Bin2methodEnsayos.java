@@ -10,7 +10,7 @@ import java.util.Scanner;
 //METER VARIABLES IMPORTANTES A PUBLIC CLASS antes del main para poder llamarlas
 //LLAMAR A LOS METODOS POR ORDEN
 //METER private static a las variables, si no, no funcionan (hecho)
-public class Bin2method {
+public class Bin2methodEnsayos {
     private static int[] carton = new int[10];
     private static int[] numerosBingo = new int[99];
     private static int contadorBolasLinea = 0;
@@ -25,7 +25,12 @@ public class Bin2method {
     private static int apuesta;
     public static void main(String[] args) {
 
-
+        contadorBolasLinea = 0;
+        contadorBolasBingo = 0;
+        contadorBolasLineaFinal = 0;
+        contadorBolasBingoFinal = 0;
+        aciertosLinea = 0;
+        aciertosBingo = 0;
 
         Scanner reJugar = new Scanner(System.in);
         System.out.println("\nBIENVENIDOS AL BINGO \n \n");
@@ -33,8 +38,8 @@ public class Bin2method {
             //llamar metodos aqui
 
 
-        bidAndPrediction();generarCarton();imprimirCarton();
-        generarBolasImprimirlasVerificaLinea();ImprimirBolasporOrden();parteFinal();
+            bidAndPrediction();generarCarton();imprimirCarton();
+            generarBolasImprimirlasVerificaLinea();ImprimirBolasporOrden();parteFinal();
 
 
 
@@ -167,5 +172,7 @@ public class Bin2method {
         if (contadorBolasBingoFinal == pronostico) {
             System.out.println(" HAS ACERTADO EL PRONOSTICO, EL BOTE ESPECIAL ES: " + apuesta * 10 + "€");
         }
+
+
     }
 }
