@@ -6,6 +6,7 @@ public class Nuevo {
     static int contadorBolasLinea = 0;
     static int contadorBolasBingo = 0;
     static int contador;
+    static boolean bingoCantado = false;
 
     public static void main(String[] args) {
         generarCarton();
@@ -80,13 +81,15 @@ public class Nuevo {
                 if (numerillos == bingo[i]) {
                     contadorBolasBingo++;
                 }
-                if (contadorBolasBingo == 5) {
-                    contadorBolasLinea = contador;
-                }
-                if (contadorBolasBingo == 15) {
-                    contadorBolasBingo = contador;
-                    break;
-                }
+            }
+            if (contadorBolasBingo == 5) {
+                contadorBolasLinea = contador;
+            }
+            if (contadorBolasBingo == 15) {
+                contadorBolasBingo = contador;
+                bingoCantado=true;
+                System.out.println("SE HA CANTADO BINGO!!");
+                break;
             }
 
         }
